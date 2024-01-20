@@ -90,8 +90,12 @@ height: 100%;
     padding: 10px 0px;
  }
  .descrip>p{
-
-    color: blue;
+max-width: 45%;
+min-width: 275px;
+    /* color: blue; */
+    background: -webkit-linear-gradient(#3300ff, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
  }
  .descrip>img{
     width: 20vmax;
