@@ -4,6 +4,10 @@ color: #ffffff;
 font-size: 1.3vmax;
 font-family: 'Dosis', sans-serif;
   }
+  #logo{
+    height: 30px;
+    filter: invert(1);
+  }
 body{
     background-color: rgba(255, 255, 255, 0);
 }
@@ -16,7 +20,12 @@ body{
     width: 100%;
     z-index: 10;
 }
+#brand{
+    display: flex;
+align-items: center;
+}
 #title{
+    justify-items: center;
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -24,11 +33,12 @@ body{
     
 }
 #title>p{
+    font-size: 1vmax;
     margin: 0px!important;
     padding: 0px !important;
 }
-#title>h3{
-    font-size: 1.6vmax;
+#title>h5{
+   
     margin: 0px!important;
     padding: 0px !important;
 }
@@ -58,7 +68,9 @@ body{
 @media (max-width:410px) {  
     .descrip>p{
         order: 10;
+        
     }  
+    #title>p{display: none;}
 }
 @media (max-width: 1250px) {
     *{
