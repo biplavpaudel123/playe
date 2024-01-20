@@ -55,6 +55,11 @@ body{
 .carousel-caption{
    padding: 10px 0px;
 }
+@media (max-width:410px) {  
+    .descrip>p{
+        order: 10;
+    }  
+}
 @media (max-width: 1250px) {
     *{
         font-size: 2vmax;
@@ -101,5 +106,4 @@ box-shadow: 0px 40px 25px 0px gray;
  .descrip>img{
     width: 20vmax;
  }
-
 
