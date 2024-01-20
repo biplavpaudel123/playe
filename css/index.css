@@ -139,6 +139,7 @@ body {
     max-width: 45%;
     padding: 15px;
     min-width: 275px;
+   
     background: -webkit-linear-gradient(#3300ff, #ff0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -146,4 +147,9 @@ body {
 
 .descrip>img {
     width: 20vmax;
+}
+#middle{
+    background-image:url('../assets/images/background\ default.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
