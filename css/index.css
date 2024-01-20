@@ -64,8 +64,8 @@ body {
 
 .buttons_home {
     border-radius: 20px;
-    background-color: #ffffff00;
-    color: rgba(1, 122, 149, 0.838);
+    background-color: #007521;
+    color: rgb(255, 255, 255);
     padding: 2px 10px;
     cursor: pointer;
 }
