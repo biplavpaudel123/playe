@@ -82,7 +82,7 @@ body {
     padding: 10px 0px;
 }
 
-@media (max-width:410px) {
+@media (max-width:418px) {
     .descrip>p {
         order: 10;
 
