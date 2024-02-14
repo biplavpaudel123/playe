@@ -3,6 +3,8 @@
     color: #ffffff;
     font-size: 1.3vmax;
     font-family: 'Dosis', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 html {
@@ -24,6 +26,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     flex-wrap: wrap;
     position: fixed;
+    top: 0px;
     width: 100%;
     z-index: 10;
 }
@@ -69,6 +72,94 @@ body {
     padding: 2px 10px;
     cursor: pointer;
 }
+#validateuser{
+    font-family: Arial, sans-serif;
+    background-image:url('../assets/images/background\ default.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:none; 
+    /* flex or none */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 70px 0px;
+    animation: slidedown 500ms forwards;
+}
+@keyframes slidedown {
+    0% {
+        transform: translatey(-100%);
+    }
+    100%{
+        transform: translatey(0%);
+    }}
+@keyframes slidefromright {
+        0% {
+            transform: translatex(100%);
+        }
+        100%{
+            transform: translatey(0%);
+        }
+}
+@keyframes slideup {
+    0% {
+        transform: translatey(30%);
+    }
+    100%{
+        transform: translatey(0%);
+    }}
+.alert{
+    color: rgba(0, 0, 0, 0.61);
+    font-family:inherit;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+#loginsignup {
+    width: 400px;
+    height: fit-content;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+    animation: slidedown 700ms forwards;
+}
+#signup{
+    display: none;/* flex or none */
+    animation: slideup 900ms forwards;
+}
+#login{
+display: none;/* flex or none */
+animation: slideup 900ms forwards;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fillup {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.fillup:focus {
+    outline: none;
+    border-color: #007521;
+}
+
+input[type="submit"] {
+    background-color: #007521;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0c3f1a;
+}
 
 #carouselExampleCaptions {
     box-shadow: 0px 40px 25px 0px gray;
@@ -83,6 +174,9 @@ body {
 }
 
 @media (max-width:418px) {
+    #loginsignup{
+        width: 100vh;
+    }
     .descrip>p {
         order: 10;
 
@@ -139,7 +233,6 @@ body {
     max-width: 45%;
     padding: 15px;
     min-width: 275px;
-   
     background: -webkit-linear-gradient(#3300ff, #ff0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
